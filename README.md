@@ -1,7 +1,5 @@
 # Plataforma de Gestão de Transporte Universitário
 
-[PLACEHOLDER: Inserir logo ou banner do projeto]
-
 ## Visão Geral
 
 Este é um repositório **vitrine (Showcase)** de um projeto de gestão de transporte universitário. O código-fonte completo é privado, por tratar-se de um software proprietário desenvolvido sob demanda.
@@ -86,7 +84,7 @@ Abaixo estão trechos reais do código (higienizados) que demonstram padrões de
 
 ## Documentação Técnica
 
-- **API Specification:** Documentação via Swagger/OpenAPI integrada ao ecossistema Spring.
+- Documentação via Swagger/OpenAPI integrada ao ecossistema Spring.
 
 ### Modelagem de Dados
 
@@ -149,7 +147,7 @@ erDiagram
 
 ## Contato
 
-Sinta-se à vontade para entrar em contato para discussões técnicas ou oportunidades:
+Sinta-se à vontade para entrar em contato:
 
 - **LinkedIn:** [linkedin.com/in/guilherme-garap](https://linkedin.com/in/guilherme-garap)
 - **E-mail:** [guilhermegarap@gmail.com](mailto:guilhermegarap@gmail.com)
