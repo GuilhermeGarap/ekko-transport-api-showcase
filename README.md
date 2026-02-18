@@ -21,7 +21,6 @@ Plataforma SaaS Multi-Tenant projetada para automatizar a gestão de transporte 
 - **Segurança:** Spring Security, JWT (Stateless), RBAC (Role-Based Access Control)
 - **Dados:** PostgreSQL, Flyway (Database Versioning), Spring Data JPA
 - **Observabilidade:** SLF4J/Logback (Logs estruturados), Tratamento Global de Exceções
-- **Testes:** JUnit 5, Mockito
 - **DevOps:** Docker, GitHub Actions (CI/CD), Nginx (Proxy Reverso)
 - **Cloud:** Oracle Cloud Infrastructure (OCI), AWS (Homologação)
 
