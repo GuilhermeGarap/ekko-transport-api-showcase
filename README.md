@@ -92,10 +92,10 @@ O diagrama abaixo reflete a estrutura exata do banco de dados (ER Diagram), evid
 
 ```mermaid
 erDiagram
-    tb_institutions ||--o{ tb_students : "gerencia"
-    tb_institutions ||--o{ users : "possui"
-    users ||--o{ user_permission : "tem"
-    permission ||--o{ user_permission : "atribuida"
+    tb_institutions ||--o{ tb_students : "institution_id"
+    tb_institutions ||--o{ tb_users : "institution_id"
+    tb_users ||--o{ user_permission : "id_user"
+    permission ||--o{ user_permission : "id_permission"
 
     tb_institutions {
         bigint id PK
@@ -105,6 +105,7 @@ erDiagram
         varchar phone
         boolean active
         timestamp created_at
+        varchar photo_path
     }
 
     tb_students {
@@ -120,9 +121,13 @@ erDiagram
         varchar payment_status
         timestamp created_at
         bigint institution_id FK
+        varchar email
+        varchar photo_path
+        varchar student_number
+        varchar college
     }
 
-    users {
+    tb_users {
         bigint id PK
         varchar user_name
         varchar full_name
@@ -132,6 +137,7 @@ erDiagram
         boolean credentials_non_expired
         boolean enabled
         bigint institution_id FK
+        varchar email
     }
 
     permission {
@@ -142,6 +148,19 @@ erDiagram
     user_permission {
         bigint id_user FK
         bigint id_permission FK
+    }
+
+    flyway_schema_history {
+        int installed_rank
+        varchar version
+        varchar description
+        varchar type
+        varchar script
+        int checksum
+        varchar installed_by
+        timestamp installed_on
+        int execution_time
+        boolean success
     }
 ```
 
